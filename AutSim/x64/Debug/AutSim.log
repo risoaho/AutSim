@@ -1,0 +1,17 @@
+﻿  Log.cpp
+C:\AutSim\AutSim\AutSim\src\AutSim\Log.h(19,42): warning C4251: 'AutSim::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'AutSim::Log'
+  (compiling source file 'src/AutSim/Log.cpp')
+  C:\AutSim\AutSim\AutSim\vendor\spdlog\include\spdlog\details\registry.h(33,31):
+  see declaration of 'std::shared_ptr<spdlog::logger>'
+  
+C:\AutSim\AutSim\AutSim\src\AutSim\Log.h(20,42): warning C4251: 'AutSim::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'AutSim::Log'
+  (compiling source file 'src/AutSim/Log.cpp')
+  C:\AutSim\AutSim\AutSim\vendor\spdlog\include\spdlog\details\registry.h(33,31):
+  see declaration of 'std::shared_ptr<spdlog::logger>'
+  
+  Application.cpp
+  Generating Code...
+     Creating library C:\AutSim\AutSim\x64\Debug\AutSim.lib and object C:\AutSim\AutSim\x64\Debug\AutSim.exp
+Log.obj : error LNK2001: unresolved external symbol "private: static class std::shared_ptr<class spdlog::logger> AutSim::Log::s_CoreLogger" (?s_CoreLogger@Log@AutSim@@0V?$shared_ptr@Vlogger@spdlog@@@std@@A)
+Log.obj : error LNK2001: unresolved external symbol "private: static class std::shared_ptr<class spdlog::logger> AutSim::Log::s_ClientLogger" (?s_ClientLogger@Log@AutSim@@0V?$shared_ptr@Vlogger@spdlog@@@std@@A)
+C:\AutSim\AutSim\x64\Debug\AutSim.dll : fatal error LNK1120: 2 unresolved externals
