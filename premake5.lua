@@ -27,7 +27,8 @@ project "AutSim"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{prj.name}/src" -- TOIVO ADD
 	}
 
 	filter "system:windows"
@@ -85,7 +86,8 @@ project "Sandbox"
 
 	links
 	{
-		"AutSim"
+		"AutSim",
+		"AutSim/src" -- TOIVO ADD
 	}
 
 	filter "system:windows"
